@@ -6,7 +6,6 @@ export default function CopyEmailButton({ email }: { email: string }) {
   const [emailCopied, setEmailCopied] = useState(false);
   const emailCopy = () => {
     navigator.clipboard.writeText(email);
-    console.log("Email copied to clipboard");
     setEmailCopied(true);
   };
   return (
@@ -17,7 +16,7 @@ export default function CopyEmailButton({ email }: { email: string }) {
       >
         <span className="absolute z-0 inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#cfcfcf_0%,#000000_50%,#cfcfcf_100%)]" />
         <span className="inline-flex z-10 h-full w-full cursor-pointer items-center justify-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-black backdrop-blur-3xl">
-          Get my email
+          {emailCopied ? "Copied!" : "Get my email"}
         </span>
       </button>
       <div className="text-xl h-8">

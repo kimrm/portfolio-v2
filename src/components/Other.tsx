@@ -8,8 +8,8 @@ export default function Other() {
           Other experiences
         </h2>
         <p className="max-w-prose leading-relaxed">
-          I have experience with a wide range of technologies and tools, and I'm
-          always eager to learn more. I have experience with:
+          I have experience with a wide range of technologies and tools, and
+          I&apos;m always eager to learn more. I have experience with:
         </p>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Calistoga } from "next/font/google";
 import "./globals.css";
 import "@fontsource/calistoga";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";

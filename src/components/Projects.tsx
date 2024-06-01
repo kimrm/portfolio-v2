@@ -24,7 +24,7 @@ export default async function Projects() {
   return (
     <div
       id="projects"
-      className="my-20 lg:my-40 flex flex-col items-center p-4"
+      className="mt-20 lg:mt-40 flex flex-col items-center px-4"
     >
       <h2 className="font-bold uppercase tracking-wide text-white mb-5">
         Selection of recent Projects

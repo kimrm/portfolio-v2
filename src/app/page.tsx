@@ -1,6 +1,7 @@
 import BentoGridSection from "@/components/BentoGridSection";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import CopyEmailButton from "@/components/ui/CopyEmailButton";
 import Image from "next/image";
 
 export default async function Home() {
@@ -10,7 +11,7 @@ export default async function Home() {
       <Projects />
       <section
         id="about"
-        className="bg-gradient-to-b from-[#03051c] to-black p-4 md:p-20 flex flex-col items-center py-10"
+        className="bg-gradient-to-b from-[#03051c] to-black px-4 md:px-20 flex flex-col items-center mt-20 lg:mt-40 pb-20 lg:pb-40"
       >
         <div className="flex flex-wrap justify-center gap-10 items-center mb-20">
           <Image
@@ -44,13 +45,14 @@ export default async function Home() {
 
       <section
         id="contact"
-        className="bg-gradient-to-b from-black to-[#03051c] p-4 md:p-20 flex flex-col items-center"
+        className="bg-black px-4 md:px-20 flex flex-col items-center pb-20 lg:pb-10"
       >
         <h2 className="font-bold uppercase tracking-wide mb-5">Contact me</h2>
-        <p className="max-w-prose">
+        <p className="max-w-prose mb-5">
           Best way to contact me is by email, where we can determine what I can
           do for you and then schedule a call.
         </p>
+        <CopyEmailButton email={process.env.email ?? ""} />
       </section>
     </main>
   );

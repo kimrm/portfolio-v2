@@ -3,6 +3,8 @@ import SkillsBadges from "./SkillsBadges";
 import HireMe from "./HireMe";
 import ForNonProfit from "./ForNonProfit";
 import Services from "./Services";
+import Contact from "./Contact";
+import Other from "./Other";
 
 export default function BentoGridSection() {
   return (
@@ -22,9 +24,6 @@ export default function BentoGridSection() {
         </BentoGridItem>
         <BentoGridItem className="md:col-span-2 min-h-96 bg-gradient-to-br from-black via-slate-900 to-black">
           <SkillsBadges />
-        </BentoGridItem>
-        <BentoGridItem>
-          <ForNonProfit />
         </BentoGridItem>
       </BentoGrid>
     </section>

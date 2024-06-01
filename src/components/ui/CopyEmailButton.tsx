@@ -26,9 +26,10 @@ export default function CopyEmailButton({ email }: { email: string }) {
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-slate-950 uppercase font-bold text-sm"
+              className="text-slate-800 lowercase font-bold text-xs tracking-wider text-center"
             >
-              Email copied
+              {email && <em className="font-bold text-slate-950">{email}</em>}{" "}
+              copied to clipboard
             </motion.div>
           )}
         </AnimatePresence>

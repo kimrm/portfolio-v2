@@ -27,7 +27,7 @@ export default async function Projects() {
       className="my-20 lg:my-40 flex flex-col items-center p-4"
     >
       <h2 className="font-bold uppercase tracking-wide text-white mb-5">
-        Projects
+        Selection of recent Projects
       </h2>
       <div className="flex flex-wrap justify-center gap-10 ">
         {projects.map(({ _id, title, description, tags, images }, i) => {
@@ -41,7 +41,7 @@ export default async function Projects() {
               containerClassName="flex bg-slate-900 justify-between flex-col h-full min-w-full lg:min-w-0 lg:w-[500px]"
               duration={duration}
             >
-              <div className="flex flex-col justify-between h-full p-4">
+              <div className="flex flex-col justify-between h-full p-4  min-h-[500px]">
                 <header>
                   <div className="overflow-visible relative w-full h-60">
                     <Image

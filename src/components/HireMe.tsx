@@ -14,7 +14,7 @@ export default function HireMe() {
         </p>
       </div>
 
-      <div className="flex-grow flex items-center justify-center">
+      <div className="flex-grow flex items-center justify-center mt-5">
         <CopyEmailButton email={process.env.email ?? ""} />
       </div>
     </div>

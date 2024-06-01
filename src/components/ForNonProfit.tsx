@@ -7,8 +7,8 @@ export default function ForNonProfit() {
         Non-profit organizations
       </h2>
       <p className="max-w-prose leading-relaxed">
-        I offer reduced rates for non-profit organizations and charity projects.
-        Contact me for more information.
+        I offer reduced rates and sometimes free services for non-profit
+        organizations and charity projects. Contact me for more information.
       </p>
     </div>
   );

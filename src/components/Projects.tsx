@@ -26,7 +26,10 @@ export default async function Projects() {
       id="projects"
       className="my-20 lg:my-40 flex flex-col items-center p-4"
     >
-      <div className="flex flex-wrap justify-center gap-20 ">
+      <h2 className="font-bold uppercase tracking-wide text-white mb-5">
+        Projects
+      </h2>
+      <div className="flex flex-wrap justify-center gap-10 ">
         {projects.map(({ _id, title, description, tags, images }, i) => {
           const projectImageUrl = images[0]
             ? urlFor(images[0])?.width(760).height(430).url()

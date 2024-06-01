@@ -15,8 +15,8 @@ export default function CopyEmailButton({ email }: { email: string }) {
         onClick={emailCopy}
         className="relative w-fit inline-flex h-12 overflow-hidden rounded-full p-[4px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 shadow-2xl "
       >
-        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#cfcfcf_0%,#000000_50%,#cfcfcf_100%)]" />
-        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-black backdrop-blur-3xl">
+        <span className="absolute z-0 inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#cfcfcf_0%,#000000_50%,#cfcfcf_100%)]" />
+        <span className="inline-flex z-10 h-full w-full cursor-pointer items-center justify-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-black backdrop-blur-3xl">
           Get my email
         </span>
       </button>

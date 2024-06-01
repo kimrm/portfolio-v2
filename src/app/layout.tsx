@@ -27,6 +27,9 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <FloatingNav navItems={navItems} />
         {children}
+        <footer className="p-24 flex justify-center">
+          <p>© {new Date().getFullYear()} Kim Møller</p>
+        </footer>
       </body>
     </html>
   );

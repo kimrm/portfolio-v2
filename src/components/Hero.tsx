@@ -8,7 +8,7 @@ export default async function Hero() {
   return (
     <div id="home" className="relative z-10 flex flex-col items-center">
       <BackgroundBeams className="z-0" />
-      <div className="flex flex-col items-center py-24 px-4">
+      <div className="flex flex-col items-center py-10 md:py-24 px-4">
         <h2 className="text-slate-300 uppercase tracking-wide my-20 font-bold text-sm text-center mb-2">
           It&apos;s time to upgrade your old Wordpress site.
         </h2>

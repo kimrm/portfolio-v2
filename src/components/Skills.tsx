@@ -7,7 +7,7 @@ const skills = [
   {
     name: "nextjs",
     grayscale: true,
-    className: "h-16 w-16 bg-slate-500 rounded px-2",
+    className: "h-16 w-16 bg-gray-500 rounded px-2",
     description:
       "The standard framework for modern fullstack development with React."
   },
@@ -34,19 +34,6 @@ const skills = [
 ];
 
 export default function Skills() {
-  const [descriptionText, setDescriptionText] = useState("");
-  const [activeSkillName, setActiveSkillName] = useState("");
-
-  const activateDescription = (skill: any) => {
-    setDescriptionText(skill.description);
-    setActiveSkillName(skill.name);
-  };
-
-  const deactivateDescription = () => {
-    setDescriptionText("");
-    setActiveSkillName("");
-  };
-
   return (
     <div>
       <motion.div
@@ -55,28 +42,16 @@ export default function Skills() {
         transition={{ duration: 1 }}
         className="flex gap-20 mt-40 relative flex-wrap items-center justify-center"
       >
-        {skills.map((skill, index) => (
-          <div key={skill.name} onClick={() => activateDescription(skill)}>
+        {skills.map((skill) => (
+          <div key={skill.name} title={skill.name}>
             <StackIcon
               name={skill.name}
-              grayscale={skill.name !== activeSkillName}
-              className={`${skill.className} cursor-pointer`}
+              grayscale
+              className={skill.className}
             />
           </div>
         ))}
       </motion.div>
-      <AnimatePresence>
-        {descriptionText && (
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="absolute mt-5 bg-slate-900 text-slate-50 p-4 rounded max-w-prose"
-          >
-            {descriptionText}
-          </motion.p>
-        )}
-      </AnimatePresence>
     </div>
   );
 }

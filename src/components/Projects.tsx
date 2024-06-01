@@ -35,7 +35,7 @@ export default async function Projects() {
           return (
             <BorderContainer
               key={_id}
-              containerClassName="flex justify-between flex-col h-full min-w-full lg:min-w-0 lg:w-[500px]"
+              containerClassName="flex bg-slate-900 justify-between flex-col h-full min-w-full lg:min-w-0 lg:w-[500px]"
               duration={duration}
             >
               <div className="flex flex-col justify-between h-full p-4">

@@ -22,7 +22,7 @@ export default async function Projects() {
   });
 
   return (
-    <div id="projects" className="flex flex-col items-center px-4 p2-10">
+    <div id="projects" className="flex flex-col items-center px-4 pt-20">
       <h2 className="font-bold uppercase tracking-wide text-white mb-5">
         Selection of recent Projects
       </h2>
@@ -32,7 +32,8 @@ export default async function Projects() {
             const projectImageUrl = images[0]
               ? urlFor(images[0])?.width(760).height(430).url()
               : null;
-            const duration = Math.floor(Math.random() * (8 - 4 + 1) + 4) * 1000;
+            const duration =
+              Math.floor(Math.random() * (14 - 4 + 1) + 4) * 1000;
             return (
               <BorderContainer
                 key={_id}
@@ -41,17 +42,15 @@ export default async function Projects() {
               >
                 <div className="flex flex-col justify-between h-full p-4  min-h-[500px]">
                   <header>
-                    <div className="overflow-visible relative w-full h-60">
-                      <Image
-                        src={projectImageUrl ?? "/holidation.png"}
-                        alt="Holidation project"
-                        width={760}
-                        height={430}
-                        className="w-full h-52 object-cover object-left border-white border-2 rounded absolute top-5 left-2 shadow-xl shadow-slate-700 "
-                      />
-                    </div>
+                    <Image
+                      src={projectImageUrl ?? "/holidation.png"}
+                      alt="Holidation project"
+                      width={760}
+                      height={430}
+                      className="w-full h-52 object-cover border-white border-2 rounded-xl shadow-xl shadow-slate-700 "
+                    />
 
-                    <h1 className="font-bold uppercase mt-3">{title}</h1>
+                    <h1 className="font-bold uppercase mt-5">{title}</h1>
                     <div className="max-w-prose my-3">
                       <PortableText value={description} />
                     </div>

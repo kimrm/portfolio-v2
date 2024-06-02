@@ -15,7 +15,10 @@ export default function HireMe() {
       </div>
 
       <div className="flex-grow flex items-center justify-center mt-5">
-        <CopyEmailButton email={process.env.email ?? ""} />
+        <CopyEmailButton
+          email={process.env.email ?? ""}
+          className="text-black"
+        />
       </div>
     </div>
   );

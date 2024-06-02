@@ -13,8 +13,8 @@ export default function Services() {
       </p>
       <ul className=" list-disc px-4 mt-3">
         <li>Web development</li>
+        <li>API development</li>
         <li>SEO optimization</li>
-        <li>Performance optimization</li>
         <li>Web hosting</li>
       </ul>
     </div>

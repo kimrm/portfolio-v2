@@ -8,7 +8,7 @@ export default async function Hero() {
   return (
     <div
       id="home"
-      className="relative z-10 flex flex-col items-center justify-center min-h-screen"
+      className="relative z-10 flex flex-col items-center justify-center h-dvh"
     >
       <BackgroundBeams className="z-0 top-0 left-0 hidden lg:block" />
       <div className="flex flex-col items-center px-4">

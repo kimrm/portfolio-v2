@@ -21,13 +21,13 @@ export default async function Hero() {
         />
 
         <p className="my-5 max-w-prose text-center text-xl">
-          Hey! I&apos;m Kim. A developer from Norway. I specialize in building
-          fast and responsive websites and apps.
+          Hi! I&apos;m Kim. A developer from Norway. My passion is building fast
+          and responsive websites and apps.
         </p>
         <Link href="/#about" className="p-[3px] relative">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
           <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-            What can I do for you?
+            What I do
           </div>
         </Link>
         <Skills />

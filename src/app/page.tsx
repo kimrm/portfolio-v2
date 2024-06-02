@@ -51,8 +51,8 @@ export default async function Home() {
       >
         <h2 className="font-bold uppercase tracking-wide mb-5">Contact me</h2>
         <p className="max-w-prose mb-5">
-          Best way to contact me is by email, where we can determine what I can
-          do for you and then schedule a call.
+          The best way to reach me is by email, where we can determine what I
+          can do for you and then schedule a call.
         </p>
         <CopyEmailButton
           email={process.env.email ?? ""}

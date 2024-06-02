@@ -11,7 +11,7 @@ export default async function Home() {
       <Projects />
       <section
         id="about"
-        className="bg-gradient-to-b from-[#03051c] to-black px-4 md:px-20 flex flex-col items-center mt-20 lg:mt-40 pb-20 lg:pb-40"
+        className="bg-gradient-to-b from-[#03051c] to-black px-4 md:px-20 flex flex-col items-center mt-40 lg:mt-60 pb-20 lg:pb-40"
       >
         <div className="flex flex-wrap justify-center gap-10 items-center mb-20">
           <Image
@@ -45,7 +45,7 @@ export default async function Home() {
 
       <section
         id="contact"
-        className="bg-black px-4 md:px-20 flex flex-col items-center pb-20 lg:pb-10"
+        className="bg-black px-4 md:px-20 flex flex-col items-center py-20 lg:py-40"
       >
         <h2 className="font-bold uppercase tracking-wide mb-5">Contact me</h2>
         <p className="max-w-prose mb-5">
@@ -53,6 +53,25 @@ export default async function Home() {
           do for you and then schedule a call.
         </p>
         <CopyEmailButton email={process.env.email ?? ""} />
+        <div>
+          Look me up on social media:
+          <a
+            href="https://www.linkedin.com/in/kim-m%C3%B8ller-6b4b9a1b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/kimrm"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2"
+          >
+            Github
+          </a>
+        </div>
       </section>
     </main>
   );

@@ -10,7 +10,7 @@ export default function BentoGridSection() {
   return (
     <section
       id="bento-grid"
-      className="my-20 flex flex-col items-center justify-center"
+      className="flex flex-col items-center justify-center"
     >
       <BentoGrid className="w-full md:w-auto">
         <BentoGridItem className="md:col-span-2 bg-slate-900">

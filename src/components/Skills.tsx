@@ -7,7 +7,7 @@ const skills = [
     name: "nextjs",
     title: "Next.js",
     grayscale: true,
-    className: "h-10 w-10 md:w-16 md-h-16 bg-gray-500",
+    className: "h-10 w-12 md:w-16 md-h-16 px-1 bg-gray-500",
     description:
       "The standard framework for modern fullstack development with React."
   },
@@ -31,12 +31,15 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div>
+    <div className="mt-20 lg:mt-40 text-center">
+      <h2 className="mb-5 uppercase text-xs tracking-wide text-gray-400">
+        Made with ❤️ using
+      </h2>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex gap-10 md:gap-20 mt-20 lg:mt-40 relative flex-wrap items-center justify-center"
+        className="flex gap-10 md:gap-20 relative flex-wrap items-center justify-center"
       >
         {skills.map((skill) => (
           <div

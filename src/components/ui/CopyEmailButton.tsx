@@ -31,10 +31,10 @@ export default function CopyEmailButton({
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
-              className="lowercase font-bold text-xs tracking-wider text-center"
+              className="font-bold text-xs tracking-wider text-center"
             >
               {email && <em className="font-bold ">{email}</em>} copied to
-              clipboard
+              clipboard. Paste it in your email client.
             </motion.div>
           )}
         </AnimatePresence>

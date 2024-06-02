@@ -9,8 +9,8 @@ export default function HireMe() {
           Hire me
         </h2>
         <p className="text-yellow-950 max-w-prose leading-relaxed">
-          I&apos;m currently available for new projects, and I&apos;m open for
-          both contract-work or employment. Let&apos;s get to work! 🚀
+          I&apos;m currently open for both contract-work or employment.
+          Let&apos;s get to work! 🚀
         </p>
       </div>
 

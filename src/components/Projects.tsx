@@ -22,11 +22,14 @@ export default async function Projects() {
   });
 
   return (
-    <div id="projects" className="flex flex-col items-center px-4 pt-20">
+    <div
+      id="projects"
+      className="flex mx-auto flex-col items-center justify-center px-4 pt-20 max-w-[1800px]"
+    >
       <h2 className="font-bold uppercase tracking-wide text-white mb-5">
         Selection of recent Projects
       </h2>
-      <div className="flex flex-wrap justify-center gap-10 ">
+      <div className="flex flex-wrap justify-center gap-5 lg:gap-10">
         {projects.map(
           ({ _id, title, description, tags, website, github, images }, i) => {
             const projectImageUrl = images[0]
@@ -37,10 +40,10 @@ export default async function Projects() {
             return (
               <BorderContainer
                 key={_id}
-                containerClassName="flex bg-slate-900 justify-between flex-col h-full min-w-full lg:min-w-0 lg:w-[500px]"
+                containerClassName="flex bg-slate-900 justify-between flex-col h-full w-full md:w-[350px] lg:w-[460px]"
                 duration={duration}
               >
-                <div className="flex flex-col justify-between h-full p-4  min-h-[500px]">
+                <div className="flex flex-col justify-between h-full p-4 min-h-[500px]">
                   <header>
                     <Image
                       src={projectImageUrl ?? "/holidation.png"}

@@ -32,7 +32,7 @@ const skills = [
 export default function Skills() {
   return (
     <div className=" mt-32 lg:mt-40 text-center">
-      <h2 className="mb-3 uppercase text-xs tracking-wide text-gray-400">
+      <h2 className="mb-2 lg:mb-5 uppercase text-xs tracking-wide text-gray-400">
         Made with ❤️ using
       </h2>
       <motion.div
@@ -45,7 +45,7 @@ export default function Skills() {
           <div
             key={skill.name}
             title={skill.name}
-            className="flex flex-col justify-between gap-2 min-h-24"
+            className="flex flex-col justify-between gap-2"
           >
             <div className="flex flex-col h-16 justify-center items-center gap-2">
               <StackIcon

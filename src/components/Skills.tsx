@@ -7,7 +7,7 @@ const skills = [
     name: "nextjs",
     title: "Next.js",
     grayscale: true,
-    className: "h-10 w-12 md:w-16 md-h-16 px-1 bg-gray-500",
+    className: "h-8 w-10 md:w-16 md-h-16 px-1 bg-gray-500",
     description:
       "The standard framework for modern fullstack development with React."
   },
@@ -15,15 +15,15 @@ const skills = [
     name: "typescript",
     title: "TypeScript",
     grayscale: true,
-    className: "h-10 w-10 md:h-16 md:w-16",
+    className: "h-8 w-8 md:h-16 md:w-16",
     description:
       "A typed superset of JavaScript that compiles to plain JavaScript."
   },
   {
     name: "tailwindcss",
-    title: "Tailwind CSS",
+    title: "Tailwind",
     grayscale: true,
-    className: "h-10 w-10 md:h-16 md:w-16",
+    className: "h-8 w-8 md:h-16 md:w-16",
     description:
       "A utility-first CSS framework for quickly building custom designs."
   }
@@ -39,7 +39,7 @@ export default function Skills() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex gap-10 md:gap-20 relative flex-wrap items-center justify-center"
+        className="flex gap-5 md:gap-20 relative flex-wrap items-center justify-center"
       >
         {skills.map((skill) => (
           <div

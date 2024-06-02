@@ -12,15 +12,15 @@ export default async function Hero() {
     >
       <BackgroundBeams className="z-0 top-0 left-0 hidden lg:block" />
       <div className="flex flex-col items-center px-4">
-        <h2 className="text-slate-300 uppercase tracking-wide font-bold text-sm text-center">
+        <h2 className="text-slate-300 uppercase tracking-wide font-bold text-xs md:text-sm text-center">
           It&apos;s time to upgrade your old Wordpress site and...
         </h2>
         <TextGenerateEffect
           words="Make your Website Shine"
-          className="font-display text-6xl sm:text-8xl text-center my-3"
+          className="font-display text-4xl md:text-6xl sm:text-8xl text-center my-3"
         />
 
-        <p className="my-5 max-w-prose text-center text-xl">
+        <p className="my-5 max-w-prose text-center text-base md:text-xl">
           Hi! I&apos;m Kim. A developer from Norway. My passion is building fast
           and responsive websites and apps.
         </p>

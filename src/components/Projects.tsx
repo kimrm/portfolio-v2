@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BorderContainer } from "./ui/MovingBorder";
 
-const PROJECTS_QUERY = `*[_type == "project"]{_id, title, description, tags, images, _createdAt, _updatedAt}|order(_createdAt asc)`;
+const PROJECTS_QUERY = `*[_type == "project"]{_id, title, description, tags, website, github, images, _createdAt, _updatedAt}|order(_createdAt asc)`;
 
 const { projectId, dataset } = client.config();
 export const urlFor = (source: SanityImageSource) =>
@@ -30,61 +30,85 @@ export default async function Projects() {
         Selection of recent Projects
       </h2>
       <div className="flex flex-wrap justify-center gap-10 ">
-        {projects.map(({ _id, title, description, tags, images }, i) => {
-          const projectImageUrl = images[0]
-            ? urlFor(images[0])?.width(760).height(430).url()
-            : null;
-          const duration = Math.floor(Math.random() * (8 - 4 + 1) + 4) * 1000;
-          return (
-            <BorderContainer
-              key={_id}
-              containerClassName="flex bg-slate-900 justify-between flex-col h-full min-w-full lg:min-w-0 lg:w-[500px]"
-              duration={duration}
-            >
-              <div className="flex flex-col justify-between h-full p-4  min-h-[500px]">
-                <header>
-                  <div className="overflow-visible relative w-full h-60">
-                    <Image
-                      src={projectImageUrl ?? "/holidation.png"}
-                      alt="Holidation project"
-                      width={760}
-                      height={430}
-                      className="w-full h-52 object-cover object-left border-white border-2 rounded absolute top-5 left-2 shadow-xl shadow-slate-700 "
-                    />
-                  </div>
+        {projects.map(
+          ({ _id, title, description, tags, website, github, images }, i) => {
+            const projectImageUrl = images[0]
+              ? urlFor(images[0])?.width(760).height(430).url()
+              : null;
+            const duration = Math.floor(Math.random() * (8 - 4 + 1) + 4) * 1000;
+            return (
+              <BorderContainer
+                key={_id}
+                containerClassName="flex bg-slate-900 justify-between flex-col h-full min-w-full lg:min-w-0 lg:w-[500px]"
+                duration={duration}
+              >
+                <div className="flex flex-col justify-between h-full p-4  min-h-[500px]">
+                  <header>
+                    <div className="overflow-visible relative w-full h-60">
+                      <Image
+                        src={projectImageUrl ?? "/holidation.png"}
+                        alt="Holidation project"
+                        width={760}
+                        height={430}
+                        className="w-full h-52 object-cover object-left border-white border-2 rounded absolute top-5 left-2 shadow-xl shadow-slate-700 "
+                      />
+                    </div>
 
-                  <h1 className="font-bold uppercase mt-3">{title}</h1>
-                  <div className="max-w-prose my-3">
-                    <PortableText value={description} />
-                  </div>
-                </header>
+                    <h1 className="font-bold uppercase mt-3">{title}</h1>
+                    <div className="max-w-prose my-3">
+                      <PortableText value={description} />
+                    </div>
+                  </header>
 
-                <div className="flex justify-between mt-5 items-center">
-                  <button className="rounded-xl px-4 py-2 bg-black border border-slate-500 shadow-xl hover:shadow-slate-700 transition-all duration-300 hover:text-white">
-                    <span>View</span>
-                  </button>
-                  <div className="flex gap-2 text-xs uppercase tracking-wide">
-                    {tags.map((tag: string) => (
-                      <div key={tag}>
-                        <span className="sr-only">{tag}</span>
-                        {tag === "sanity" ? (
-                          <div className={`h-5 w-5`}>
-                            <SanityIcon />
-                          </div>
-                        ) : (
+                  <div className="flex justify-between mt-5 items-center">
+                    <div className="flex gap-2">
+                      {website && (
+                        <Link
+                          href={website}
+                          target="_blank"
+                          className="rounded-xl px-4 py-2 bg-black border border-slate-500 shadow-xl hover:shadow-slate-700 transition-all duration-300 hover:text-white"
+                        >
+                          <span>Website</span>
+                        </Link>
+                      )}
+                      {github && (
+                        <Link
+                          href={github}
+                          target="_blank"
+                          className="rounded-xl px-4 py-2 bg-black border border-slate-500 shadow-xl hover:shadow-slate-700 transition-all duration-300 hover:text-white flex items-center gap-2"
+                        >
                           <StackIcon
-                            name={tag === "nextjs" ? "nextjs2" : tag}
-                            className={`h-5 w-5`}
+                            name="github"
+                            className="h-5 w-5 bg-white rounded-full border-[1px] border-white"
                           />
-                        )}
-                      </div>
-                    ))}
+                          <span>Github</span>
+                        </Link>
+                      )}
+                    </div>
+
+                    <div className="flex gap-2 text-xs uppercase tracking-wide">
+                      {tags.map((tag: string) => (
+                        <div key={tag}>
+                          <span className="sr-only">{tag}</span>
+                          {tag === "sanity" ? (
+                            <div className={`h-5 w-5`}>
+                              <SanityIcon />
+                            </div>
+                          ) : (
+                            <StackIcon
+                              name={tag === "nextjs" ? "nextjs2" : tag}
+                              className={`h-5 w-5`}
+                            />
+                          )}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </BorderContainer>
-          );
-        })}
+              </BorderContainer>
+            );
+          }
+        )}
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ export default async function Hero() {
         <h2 className="text-slate-300 uppercase tracking-wide font-bold text-xs md:text-sm text-center">
           Enthusiatic developer who loves to
         </h2>
+
         <TextGenerateEffect
           words="Make your Website Shine"
           className="font-display text-4xl md:text-6xl sm:text-8xl text-center my-3"

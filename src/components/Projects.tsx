@@ -59,7 +59,7 @@ export default async function Projects() {
                     </div>
                   </header>
 
-                  <div className="flex justify-between mt-5 items-center">
+                  <div className="flex flex-wrap gap-y-10 justify-between mt-5 items-center">
                     <div className="flex gap-2">
                       {website && (
                         <Link

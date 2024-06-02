@@ -22,10 +22,7 @@ export default async function Projects() {
   });
 
   return (
-    <div
-      id="projects"
-      className="mt-40 lg:mt-60 flex flex-col items-center px-4"
-    >
+    <div id="projects" className="flex flex-col items-center px-4">
       <h2 className="font-bold uppercase tracking-wide text-white mb-5">
         Selection of recent Projects
       </h2>

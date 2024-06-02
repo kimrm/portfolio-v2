@@ -11,7 +11,7 @@ export default async function Home() {
       <Projects />
       <section
         id="about"
-        className="bg-gradient-to-b from-[#03051c] to-black px-4 md:px-20 flex flex-col items-center mt-40 lg:mt-60 pb-20 lg:pb-40"
+        className="bg-gradient-to-b from-[#03051c] to-black px-4 md:px-20 flex flex-col items-center pt-40 lg:pt-60 pb-20 lg:pb-40"
       >
         <div className="flex flex-wrap justify-center gap-10 items-center mb-20">
           <Image

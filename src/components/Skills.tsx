@@ -15,7 +15,7 @@ const skills = [
     name: "typescript",
     title: "TypeScript",
     grayscale: true,
-    className: "h-8 w-8 md:h-16 md:w-16",
+    className: "h-8 w-8 md:h-10 md:w-10",
     description:
       "A typed superset of JavaScript that compiles to plain JavaScript."
   },
@@ -23,7 +23,7 @@ const skills = [
     name: "tailwindcss",
     title: "Tailwind",
     grayscale: true,
-    className: "h-8 w-8 md:h-16 md:w-16",
+    className: "h-8 w-8 md:h-10 md:w-10",
     description:
       "A utility-first CSS framework for quickly building custom designs."
   }

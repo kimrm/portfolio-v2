@@ -17,7 +17,7 @@ export default async function Hero() {
 
         <TextGenerateEffect
           words="Make your Website Shine"
-          className="font-display dark:text-white text-slate-950 text-4xl md:text-6xl sm:text-8xl text-center my-3"
+          className="font-display dark:text-white text-slate-950 text-4xl md:text-6xl sm:text-8xl text-center my-1"
         />
 
         <p className="my-5 max-w-prose text-center text-base md:text-xl dark:text-slate-300 text-neutral-700 ">

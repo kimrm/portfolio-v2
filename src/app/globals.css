@@ -3,10 +3,5 @@
 @tailwind utilities;
 
 html {
-  background-color: #03051c;
   scroll-behavior: smooth;
-}
-
-body {
-  color: #fff;
 }

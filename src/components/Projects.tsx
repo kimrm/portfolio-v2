@@ -24,9 +24,9 @@ export default async function Projects() {
   return (
     <div
       id="projects"
-      className="flex mx-auto flex-col items-center justify-center px-4 pt-20 max-w-[1800px]"
+      className="flex mx-auto flex-col items-center justify-center px-4 py-20 max-w-[1800px] dark:bg-black bg-neutral-100 rounded"
     >
-      <h2 className="font-bold uppercase tracking-wide text-white mb-5">
+      <h2 className="font-bold uppercase tracking-wide dark:text-neutral-50 text-neutral-900 mb-5">
         Selection of recent Projects
       </h2>
       <div className="flex flex-wrap justify-center gap-5 lg:gap-10">
@@ -40,7 +40,7 @@ export default async function Projects() {
             return (
               <BorderContainer
                 key={_id}
-                containerClassName="flex bg-slate-900 justify-between flex-col h-full w-full md:w-[350px] lg:w-[460px]"
+                containerClassName="flex dark:bg-slate-900 bg-slate-100 justify-between flex-col h-full w-full md:w-[350px] lg:w-[460px]"
                 duration={duration}
               >
                 <div className="flex flex-col justify-between h-full p-4 min-h-[500px]">
@@ -50,7 +50,7 @@ export default async function Projects() {
                       alt="Holidation project"
                       width={760}
                       height={430}
-                      className="w-full h-52 object-cover border-white border-2 rounded-xl shadow-xl shadow-slate-700 "
+                      className="w-full h-52 object-cover border-white border-2 rounded-xl dark:shadow-xl shadow-lg dark:shadow-slate-700 shadow-slate-400 "
                     />
 
                     <h1 className="font-bold uppercase mt-5">{title}</h1>
@@ -65,7 +65,7 @@ export default async function Projects() {
                         <Link
                           href={website}
                           target="_blank"
-                          className="rounded-xl px-4 py-2 bg-black border border-slate-500 shadow-xl hover:shadow-slate-700 transition-all duration-300 hover:text-white"
+                          className="rounded-xl px-4 py-2 dark:bg-black bg-zinc-300 border border-slate-500 shadow-xl hover:shadow-slate-700 transition-all duration-300 hover:text-black dark:hover:text-white"
                         >
                           <span>Website</span>
                         </Link>
@@ -74,7 +74,7 @@ export default async function Projects() {
                         <Link
                           href={github}
                           target="_blank"
-                          className="rounded-xl px-4 py-2 bg-black border border-slate-500 shadow-xl hover:shadow-slate-700 transition-all duration-300 hover:text-white flex items-center gap-2"
+                          className="rounded-xl px-4 py-2 dark:bg-black bg-zinc-300 border border-slate-500 shadow-xl hover:shadow-slate-700 transition-all duration-300 hover:text-black dark:hover:text-white flex items-center gap-2"
                         >
                           <StackIcon
                             name="github"

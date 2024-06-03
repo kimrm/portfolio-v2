@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 
 const skills = [
   {
-    name: "nextjs",
-    title: "Next.js",
-    grayscale: true,
-    className: "h-8 w-10 md:w-16 md-h-16 px-1 bg-gray-500",
-    description:
-      "The standard framework for modern fullstack development with React."
-  },
-  {
     name: "typescript",
     title: "TypeScript",
     grayscale: true,
     className: "h-8 w-8 md:h-10 md:w-10",
     description:
       "A typed superset of JavaScript that compiles to plain JavaScript."
+  },
+  {
+    name: "nextjs",
+    title: "Next.js",
+    grayscale: true,
+    className: "h-8 w-10 md:w-16 md-h-16 px-1 dark:bg-neutral-200",
+    description:
+      "The standard framework for modern fullstack development with React."
   },
   {
     name: "tailwindcss",
@@ -32,7 +32,7 @@ const skills = [
 export default function Skills() {
   return (
     <div className=" mt-32 lg:mt-40 text-center">
-      <h2 className="mb-2 lg:mb-5 uppercase text-xs tracking-wide text-gray-400">
+      <h2 className="mb-2 lg:mb-5 uppercase text-xs tracking-wide dark:text-neutral-400 text-neutral-600">
         Made with ❤️ using
       </h2>
       <motion.div
@@ -48,13 +48,9 @@ export default function Skills() {
             className="flex flex-col justify-between gap-2"
           >
             <div className="flex flex-col h-16 justify-center items-center gap-2">
-              <StackIcon
-                name={skill.name}
-                grayscale
-                className={skill.className}
-              />
+              <StackIcon name={skill.name} className={skill.className} />
             </div>
-            <span className="uppercase text-xs tracking-wide text-gray-300">
+            <span className="uppercase text-xs tracking-wide dark:text-neutral-300 text-neutral-600">
               {skill.title}
             </span>
           </div>

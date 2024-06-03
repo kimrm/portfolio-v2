@@ -4,7 +4,7 @@ import StackIcon from "tech-stack-icons";
 export default function SkillsBadges() {
   return (
     <div className="flex flex-col h-full">
-      <h2 className="font-bold uppercase tracking-wide text-gray-300 mb-5">
+      <h2 className="font-bold uppercase tracking-wide dark:text-gray-300 mb-5">
         Skills and tech experience
       </h2>
       <div className="flex-grow flex items-center justify-center">

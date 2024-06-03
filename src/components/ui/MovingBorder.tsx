@@ -56,7 +56,7 @@ export function BorderContainer({
 
       <div
         className={cn(
-          "relative bg-slate-900 border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative dark:bg-slate-900 bg-zinc-200 border dark:border-slate-800 border-slate-100 backdrop-blur-xl dark:text-neutral-50 text-neutral-900 flex items-center justify-center w-full h-full text-sm antialiased",
           className
         )}
         style={{

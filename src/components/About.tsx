@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-gradient-to-b from-[#03051c] to-black px-4 md:px-20 flex flex-col items-center pt-40 lg:pt-60 pb-20 lg:pb-40"
+      className="dark:bg-gradient-to-b dark:from-[#03051c] dark:to-black px-4 md:px-20 flex flex-col items-center py-20 "
     >
       <div className="flex flex-wrap justify-center gap-10 items-center mb-20">
         <Image

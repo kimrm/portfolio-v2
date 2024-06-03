@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "@fontsource/calistoga";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import ThemeSelector from "@/components/ThemeSelector";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +25,13 @@ export default function RootLayout({
   ];
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      <body
+        className={`${inter.className} antialiased dark:bg-[#03051c] bg-neutral-200 dark:text-neutral-50 text-neutral-950 `}
+      >
+        <ThemeSelector />
         <FloatingNav navItems={navItems} />
         {children}
-        <footer className="py-10 flex justify-center bg-black">
+        <footer className="py-10 flex justify-center dark:bg-black bg-neutral-200">
           <p>© {new Date().getFullYear()} Kim Møller</p>
         </footer>
       </body>

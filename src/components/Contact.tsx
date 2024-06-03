@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-black px-4 md:px-20 flex flex-col items-center py-20 lg:py-40"
+      className="dark:bg-black px-4 md:px-20 flex flex-col items-center py-20 lg:py-40"
     >
       <h2 className="font-bold uppercase tracking-wide mb-5">Contact me</h2>
       <p className="max-w-prose mb-5">

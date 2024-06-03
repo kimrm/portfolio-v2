@@ -8,7 +8,7 @@ export default function ThemeButton({
   return (
     <button
       onClick={onClick}
-      className="relative text-xs cursor-pointer uppercase tracking-wide flex items-center justify-between w-20 border rounded py-2 px-4 border-gray-600 overflow-hidden"
+      className="relative dark:bg-black bg-neutral-100 text-xs cursor-pointer uppercase tracking-wide flex items-center justify-between w-20 border rounded py-2 px-4 border-gray-600 overflow-hidden"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

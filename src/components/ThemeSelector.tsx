@@ -9,6 +9,7 @@ export default function ThemeSelector() {
 
   function handleDarkMode() {
     setDarkMode((prev) => !prev);
+    localStorage.theme = darkMode ? "light" : "dark";
   }
 
   useEffect(() => {
@@ -24,7 +25,6 @@ export default function ThemeSelector() {
   }, []);
 
   useEffect(() => {
-    console.log(darkMode);
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {

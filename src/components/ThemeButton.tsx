@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
 
 export default function ThemeButton() {
-  const [darkMode, setDarkMode] = useState(
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    console.log(window.matchMedia("(prefers-color-scheme: dark)").matches);
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&

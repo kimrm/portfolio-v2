@@ -8,7 +8,6 @@ export default function ThemeButton({
   return (
     <button
       onClick={onClick}
-      aria-hidden="true"
       aria-label="Toggle Dark Mode"
       title="Toggle Dark Mode"
       className="relative dark:bg-black bg-neutral-100 text-xs cursor-pointer uppercase tracking-wide flex items-center justify-between w-20 border rounded py-2 px-4 border-gray-600 overflow-hidden"

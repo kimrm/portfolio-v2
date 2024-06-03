@@ -1,35 +1,13 @@
-import { useState, useEffect } from "react";
-
-export default function ThemeButton() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    console.log(darkMode);
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
-
-  function handleDarkMode() {
-    setDarkMode((prev) => !prev);
-  }
+export default function ThemeButton({
+  darkMode,
+  onClick
+}: {
+  darkMode: boolean;
+  onClick: () => void;
+}) {
   return (
     <button
-      onClick={handleDarkMode}
+      onClick={onClick}
       className="relative text-xs cursor-pointer uppercase tracking-wide flex items-center justify-between w-20 border rounded py-2 px-4 border-gray-600 overflow-hidden"
     >
       <svg

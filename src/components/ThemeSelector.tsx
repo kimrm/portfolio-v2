@@ -31,7 +31,7 @@ export default function ThemeSelector() {
           exit={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="fixed z-50 top-0 left-0 right-0 flex gap-5 items-center justify-between w-fit py-2 px-5 mx-auto bg-gray-500 rounded-b-lg bg-opacity-50"
+          className="fixed z-50 top-0 left-0 right-0 flex gap-5 items-center justify-between w-fit py-2 px-5 mx-auto  rounded-b-lg bg-opacity-50"
         >
           <ThemeButton />
         </motion.div>

@@ -22,7 +22,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/kim-rune-moller"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 flex items-center gap-2 rounded-xl border-gray-700 border p-2 hover:bg-gray-900"
+            className="ml-2 flex items-center gap-2 rounded-xl border-gray-700 border p-2 dark:hover:bg-gray-900 hover:bg-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,11 +40,11 @@ export default function Contact() {
             href="https://github.com/kimrm"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 flex items-center gap-2 rounded-xl border-gray-700 border p-2 hover:bg-gray-900"
+            className="ml-2 flex items-center gap-2 rounded-xl border-gray-700 border p-2  dark:hover:bg-gray-900 hover:bg-gray-300"
           >
             <StackIcon
               name="github"
-              className="h-6 w-6 inline bg-white rounded"
+              className="h-6 w-6 inline dark:bg-white rounded"
             />
             Github
           </Link>

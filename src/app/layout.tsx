@@ -24,7 +24,7 @@ export default function RootLayout({
     { name: "Contact", link: "/#contact", icon: <ContactIcon /> }
   ];
   return (
-    <html lang="en">
+    <html lang="en" className="light">
       <body
         className={`${inter.className} antialiased dark:bg-[#03051c] bg-neutral-200 dark:text-neutral-50 text-neutral-950 `}
       >

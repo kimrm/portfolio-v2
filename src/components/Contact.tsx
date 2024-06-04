@@ -7,14 +7,8 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="dark:bg-black px-4 md:px-20 flex flex-col items-center py-20 lg:py-40"
+      className="dark:bg-black px-4 md:px-20 flex flex-col items-center py-20 lg:py-20"
     >
-      <h2 className="font-bold uppercase tracking-wide mb-5">Contact me</h2>
-      <p className="max-w-prose mb-5">
-        The best way to reach me is by email, where we can determine what I can
-        do for you and then schedule a call.
-      </p>
-      <CopyEmailButton email={process.env.email ?? ""} className="text-white" />
       <div className="flex flex-col items-center">
         <h3>Look me up on social media:</h3>
         <div className="flex flex-wrap gap-5 items-center mt-5">

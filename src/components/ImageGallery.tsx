@@ -18,7 +18,7 @@ export default function ImageGallery({
     <div
       id="image-gallery-backdrop"
       onClick={closeGallery}
-      className="fixed z-50 w-screen h-screen top-0 left-0 right-0 flex gap-5 items-center justify-between py-2 px-5 mx-auto bg-transparent rounded-b-lg backdrop-blur-md "
+      className="fixed z-50 w-screen h-screen top-0 left-0 right-0 flex gap-5 items-center justify-between py-2 px-5 mx-auto rounded-b-lg dark:bg-neutral-900 bg-neutral-100 dark:text-white bg-opacity-50"
     >
       <div className="dark:bg-neutral-100 shadow bg-neutral-100 dark:text-white p-1 flex flex-col justify-center items-center rounded mx-auto">
         <button

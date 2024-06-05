@@ -5,6 +5,7 @@ import "@fontsource/calistoga";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import ThemeSelector from "@/components/ThemeSelector";
 import Footer from "@/components/Footer";
+import GetEmailModal from "@/components/GetEmailModal";
 
 const inter = Inter({ subsets: ["latin"] });
 

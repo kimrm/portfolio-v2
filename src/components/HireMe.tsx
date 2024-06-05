@@ -1,6 +1,6 @@
 import React from "react";
-import CopyEmailButton from "./ui/CopyEmailButton";
 import Link from "next/link";
+import ContactButton from "./ContactButton";
 
 export default function HireMe() {
   return (
@@ -15,9 +15,7 @@ export default function HireMe() {
         </p>
         <ul className="my-3">
           <li>
-            <button className="text-gray-950 underline my-1 block">
-              E-mail
-            </button>
+            <ContactButton />
           </li>
           <li>
             <Link

@@ -22,7 +22,6 @@ export async function sendMail(prevState: any, formData: FormData) {
   await new Promise((resolve, reject) => {
     transporter.verify(function (error: any, success: any) {
       if (error) {
-        console.log(error);
         reject(error);
       } else {
         resolve(success);
@@ -42,7 +41,6 @@ export async function sendMail(prevState: any, formData: FormData) {
   await new Promise((resolve, reject) => {
     transporter.sendMail(mailData, function (err: any, info: any) {
       if (err) {
-        console.log(err);
         reject(err);
       } else {
         resolve(info);

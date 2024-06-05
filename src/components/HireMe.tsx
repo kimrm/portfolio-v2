@@ -21,7 +21,7 @@ export default function HireMe() {
             <Link
               href="https://cv.kimrune.dev"
               target="_blank"
-              className="text-gray-950 underline my-1 block"
+              className="text-gray-950 underline my-1 block hover:text-sky-950"
             >
               CV
             </Link>
@@ -30,7 +30,7 @@ export default function HireMe() {
             <Link
               href="https://github.com/kimrm"
               target="_blank"
-              className="text-gray-950 underline my-1 block"
+              className="text-gray-950 underline my-1 block hover:text-sky-950"
             >
               GitHub
             </Link>
@@ -39,7 +39,7 @@ export default function HireMe() {
             <Link
               href="https://www.linkedin.com/in/kim-rune-moller/"
               target="_blank"
-              className="text-gray-950 underline my-1 block"
+              className="text-gray-950 underline my-1 block hover:text-sky-950"
             >
               LinkedIn
             </Link>

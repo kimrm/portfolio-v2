@@ -11,7 +11,7 @@ export default async function Hero() {
       <BackgroundBeams className="z-0 top-0 left-0 hidden lg:block" />
       <div className="flex flex-col items-center px-4">
         <h2 className="dark:text-slate-300 text-neutral-600 uppercase tracking-wide font-bold text-xs md:text-sm text-center">
-          Enthusiatic developer who loves to
+          Enthusiastic developer who loves to
         </h2>
 
         <TextGenerateEffect

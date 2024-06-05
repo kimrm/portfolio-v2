@@ -14,14 +14,15 @@ export default function Services() {
         you with:
       </p>
       <div className="flex">
-        <ul className=" flex flex-col flex-wrap list-disc px-4 mt-3 dark:text-neutral-50">
+        <ul className="flex flex-col flex-wrap list-disc px-4 mt-3 dark:text-neutral-50">
           <li>Web development</li>
           <li>API development</li>
-          <li>SEO optimization</li>
+          <li>Integrations</li>
         </ul>
-        <ul className=" flex flex-col flex-wrap list-disc px-4 mt-3 dark:text-neutral-50">
+        <ul className="flex flex-col flex-wrap list-disc px-4 mt-3 dark:text-neutral-50">
           <li>Web hosting</li>
           <li>Consulting</li>
+          <li>SEO optimization</li>
         </ul>
       </div>
     </div>

@@ -18,9 +18,9 @@ export default function ContactButton() {
 
       <button
         onClick={handleOpen}
-        className="text-gray-950 underline my-1 block"
+        className="text-gray-950 underline my-3 block hover:text-sky-950"
       >
-        E-mail
+        Send me an email
       </button>
     </>
   );

@@ -32,7 +32,7 @@ export default function GetEmailModal({ onClose }: GetEmailModalProps) {
         >
           <h2 className="text-xl font-bold">Get in touch</h2>
           <p className="my-4 text-slate-900 dark:text-slate-100">
-            I&apos;m currently looking for new opportunities. If you&apos; like
+            I&apos;m currently looking for new opportunities. If you&apos;d like
             to work together, please feel free to reach out.
           </p>
           {state.status === "error" && (

@@ -8,7 +8,7 @@ export default function BentoGridSection() {
   return (
     <section
       id="bento-grid"
-      className="flex flex-col items-center justify-center"
+      className="flex flex-col items-center justify-center max-w-[1000px]"
     >
       <BentoGrid className="w-full md:w-auto">
         <BentoGridItem className="md:col-span-2 dark:bg-slate-900 bg-slate-300">

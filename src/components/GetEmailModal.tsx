@@ -26,7 +26,7 @@ export default function GetEmailModal({ onClose }: GetEmailModalProps) {
         className="fixed inset-0 bg-black bg-opacity-50 z-50"
       >
         <motion.div
-          initial={{ y: -100 }}
+          initial={{ y: -40 }}
           animate={{ y: 0 }}
           className="bg-white dark:bg-slate-800 dark:text-neutral-50 text-neutral-950 p-4 rounded-lg w-11/12 md:w-1/2 lg:w-1/3 mx-auto my-20"
         >
@@ -86,7 +86,11 @@ function SubmitButton() {
 
   useEffect(() => {
     if (pending) {
-      animate(scope.current, { x: 200 }, { duration: 1, repeat: Infinity });
+      animate(
+        scope.current,
+        { x: 200, opacity: 0 },
+        { duration: 1, repeat: Infinity }
+      );
     }
   }, [pending, animate, scope]);
 

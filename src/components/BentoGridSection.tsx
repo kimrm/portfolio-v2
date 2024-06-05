@@ -3,8 +3,6 @@ import SkillsBadges from "./SkillsBadges";
 import HireMe from "./HireMe";
 import ForNonProfit from "./ForNonProfit";
 import Services from "./Services";
-import Contact from "./Contact";
-import Other from "./Other";
 
 export default function BentoGridSection() {
   return (

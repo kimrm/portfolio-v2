@@ -31,7 +31,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className=" mt-32 lg:mt-40 text-center">
+    <div className="pb-20 text-center">
       <h2 className="mb-2 lg:mb-5 uppercase text-xs tracking-wide dark:text-neutral-400 text-neutral-600">
         Made with ❤️ using
       </h2>

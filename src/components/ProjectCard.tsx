@@ -48,7 +48,6 @@ export default function ProjectCard({
       <div className="flex flex-col justify-between h-full p-4 min-h-[500px]">
         <header>
           <ProjectImage
-            projectImageUrl={projectImageUrl ?? undefined}
             images={images.map((image, i) => {
               return {
                 src: urlFor(image)?.url(),

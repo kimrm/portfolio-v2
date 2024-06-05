@@ -1,13 +1,12 @@
 import { BackgroundBeams } from "./ui/BackgroundBeams";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
-import Skills from "./Skills";
 import Link from "next/link";
 
 export default async function Hero() {
   return (
     <div
       id="home"
-      className="relative z-10 flex flex-col items-center justify-center h-[calc(100dvh)] max-h-screen"
+      className="relative z-10 flex flex-col items-center justify-center h-screen"
     >
       <BackgroundBeams className="z-0 top-0 left-0 hidden lg:block" />
       <div className="flex flex-col items-center px-4">
@@ -17,7 +16,7 @@ export default async function Hero() {
 
         <TextGenerateEffect
           words="Make your Website Shine"
-          className="font-display dark:text-white text-slate-950 text-4xl md:text-6xl sm:text-8xl text-center my-1"
+          className="font-display dark:text-white text-slate-950 text-4xl md:text-6xl lg:text-8xl text-center my-1"
         />
 
         <p className="my-5 max-w-prose text-center text-base md:text-xl dark:text-slate-300 text-neutral-700 ">
@@ -30,7 +29,6 @@ export default async function Hero() {
             What I do
           </div>
         </Link>
-        <Skills />
       </div>
     </div>
   );

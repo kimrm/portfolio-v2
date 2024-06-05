@@ -4,6 +4,7 @@ import "./globals.css";
 import "@fontsource/calistoga";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import ThemeSelector from "@/components/ThemeSelector";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,9 +32,7 @@ export default function RootLayout({
         <ThemeSelector />
         <FloatingNav navItems={navItems} />
         {children}
-        <footer className="py-10 flex justify-center dark:bg-black bg-neutral-200">
-          <p>© {new Date().getFullYear()} Kim Møller</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

@@ -29,7 +29,7 @@ const skills = [
   }
 ];
 
-export default function Skills() {
+export default function MadeWith() {
   return (
     <div className="pb-20 text-center">
       <h2 className="mb-2 lg:mb-5 uppercase text-xs tracking-wide dark:text-neutral-400 text-neutral-600">

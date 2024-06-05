@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="dark:bg-black px-4 md:px-20 flex flex-col items-center py-20 lg:py-20"
+      className="dark:bg-black px-4 md:px-20 flex flex-col items-center mb-10"
     >
       <div className="flex flex-col items-center">
         <h3>Look me up on social media:</h3>

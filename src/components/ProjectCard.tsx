@@ -1,12 +1,10 @@
 import React from "react";
 import StackIcon from "tech-stack-icons";
 import Link from "next/link";
-import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 import { PortableText } from "@portabletext/react";
 import { client } from "@/sanity/client";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
-import { BorderContainer } from "./ui/MovingBorder";
 import ProjectImage from "./ProjectImage";
 
 interface ProjectCardProps {

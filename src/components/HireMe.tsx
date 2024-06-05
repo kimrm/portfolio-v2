@@ -28,7 +28,7 @@ export default function HireMe() {
           </li>
           <li>
             <Link
-              href="https://cv.kimrune.dev"
+              href="https://github.com/kimrm"
               target="_blank"
               className="text-gray-950 underline my-1 block"
             >
@@ -37,7 +37,7 @@ export default function HireMe() {
           </li>
           <li>
             <Link
-              href="https://cv.kimrune.dev"
+              href="https://www.linkedin.com/in/kim-rune-moller/"
               target="_blank"
               className="text-gray-950 underline my-1 block"
             >

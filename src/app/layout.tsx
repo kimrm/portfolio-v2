@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased dark:bg-[#03051c] bg-neutral-200 dark:text-neutral-50 text-neutral-950 `}
+        className={`${inter.className} scroll-smooth antialiased dark:bg-[#03051c] bg-neutral-200 dark:text-neutral-50 text-neutral-950 `}
       >
         <ThemeSelector />
         <FloatingNav navItems={navItems} />

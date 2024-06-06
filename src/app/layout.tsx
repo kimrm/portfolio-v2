@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import "@fontsource/calistoga";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import ThemeSelector from "@/components/ThemeSelector";
 import Footer from "@/components/Footer";
-import GetEmailModal from "@/components/GetEmailModal";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import "./globals.css";
+import "@fontsource/calistoga";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +25,7 @@ export default function RootLayout({
     { name: "Contact", link: "/#contact", icon: <ContactIcon /> }
   ];
   return (
-    <html lang="en" className="light">
+    <html lang="en">
       <body
         className={`${inter.className} antialiased dark:bg-[#03051c] bg-neutral-200 dark:text-neutral-50 text-neutral-950 `}
       >

@@ -7,21 +7,20 @@ export default function ThemeSelector() {
   const [menuOpen, setMenuOpen] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
 
-  function handleDarkMode() {
-    setDarkMode((prev) => !prev);
-    localStorage.theme = darkMode ? "light" : "dark";
-  }
-
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
+      (!localStorage.theme &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       setDarkMode(true);
     } else {
       setDarkMode(false);
     }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -41,13 +40,10 @@ export default function ThemeSelector() {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  function handleDarkMode() {
+    setDarkMode((prev) => !prev);
+    localStorage.theme = darkMode ? "light" : "dark";
+  }
 
   return (
     <AnimatePresence>

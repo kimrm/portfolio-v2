@@ -1,35 +1,21 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "next-themes";
 import ThemeButton from "./ThemeButton";
 
 export default function ThemeSelector() {
+  const [isMounted, setIsMounted] = useState(false);
+  const { setTheme, resolvedTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(true);
-  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!localStorage.theme &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
+    setIsMounted(true);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
 
   const handleScroll = () => {
     const position = window.scrollY;
@@ -41,13 +27,12 @@ export default function ThemeSelector() {
   };
 
   function handleDarkMode() {
-    setDarkMode((prev) => !prev);
-    localStorage.theme = darkMode ? "light" : "dark";
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
   }
 
   return (
     <AnimatePresence>
-      {menuOpen && (
+      {menuOpen && isMounted && (
         <motion.div
           initial={{ y: -100 }}
           exit={{ y: -100 }}
@@ -55,7 +40,10 @@ export default function ThemeSelector() {
           transition={{ duration: 1 }}
           className="fixed z-50 top-0 left-0 right-0 flex gap-5 items-center justify-between w-fit py-2 px-5 mx-auto  rounded-b-lg bg-opacity-50"
         >
-          <ThemeButton darkMode={darkMode} onClick={handleDarkMode} />
+          <ThemeButton
+            darkMode={resolvedTheme === "dark"}
+            onClick={handleDarkMode}
+          />
         </motion.div>
       )}
     </AnimatePresence>

@@ -1,5 +1,6 @@
 import ThemeSelector from "@/components/ThemeSelector";
 import Footer from "@/components/Footer";
+import Providers from "@/context/providers";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
@@ -9,8 +10,15 @@ import "@fontsource/calistoga";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kim Møller - Software Developer",
-  description: "Kim Møller is a software developer based in Norway."
+  title: "Kim Møller - Web Developer",
+  description: "Kim Møller is a software developer based in Norway.",
+  openGraph: {
+    title: "Kim Møller - Web Developer",
+    description: "Kim Møller is a software developer based in Norway.",
+    type: "website",
+    locale: "en_US",
+    url: "https://kimmoeller.dev"
+  }
 };
 
 export default function RootLayout({
@@ -25,14 +33,16 @@ export default function RootLayout({
     { name: "Contact", link: "/#contact", icon: <ContactIcon /> }
   ];
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${inter.className} antialiased dark:bg-[#03051c] bg-neutral-200 dark:text-neutral-50 text-neutral-950 `}
       >
-        <ThemeSelector />
-        <FloatingNav navItems={navItems} />
-        {children}
-        <Footer />
+        <Providers>
+          <ThemeSelector />
+          <FloatingNav navItems={navItems} />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

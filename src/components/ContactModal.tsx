@@ -4,11 +4,11 @@ import { sendMail } from "@/actions/actions";
 import { useFormStatus, useFormState } from "react-dom";
 import { motion, AnimatePresence, useAnimate } from "framer-motion";
 
-interface GetEmailModalProps {
+interface ContactModalProps {
   onClose: () => void;
 }
 
-export default function GetEmailModal({ onClose }: GetEmailModalProps) {
+export default function ContactModal({ onClose }: ContactModalProps) {
   const [state, formAction] = useFormState(sendMail, { status: "" });
 
   useEffect(() => {
@@ -128,14 +128,14 @@ function Form({ onClose }: { onClose: () => void }) {
         name="email"
         id="email"
         required
-        className="rounded-lg text-neutral-900 p-2 border border-neutral-300 dark:border-neutral-700"
+        className="rounded-lg text-neutral-900 dark:text-neutral-100 p-2 border border-neutral-300 dark:border-neutral-700"
       />
       <label htmlFor="message">Message</label>
       <textarea
         name="message"
         id="message"
         required
-        className="rounded-lg p-2 border text-neutral-900 border-neutral-300 dark:border-neutral-700"
+        className="rounded-lg p-2 border text-neutral-900 dark:text-neutral-100 border-neutral-300 dark:border-neutral-700"
       ></textarea>
       <div className="flex items-center gap-2">
         <SubmitButton />

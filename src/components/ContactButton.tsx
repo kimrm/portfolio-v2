@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import GetEmailModal from "./GetEmailModal";
+import ContactModal from "./ContactModal";
 
 export default function ContactButton() {
   const [showModal, setShowModal] = useState(false);
@@ -14,7 +14,7 @@ export default function ContactButton() {
   }
   return (
     <>
-      {showModal && <GetEmailModal onClose={handleClose} />}
+      {showModal && <ContactModal onClose={handleClose} />}
 
       <button
         onClick={handleOpen}

@@ -33,18 +33,13 @@ export default function ProjectCard({
   github,
   images
 }: ProjectCardProps) {
-  const projectImageUrl = images[0]
-    ? urlFor(images[0])?.width(760).height(430).url()
-    : null;
-  const duration = Math.floor(Math.random() * (14 - 4 + 1) + 4) * 1000;
-
   return (
     <div
       key={_id}
-      className="flex rounded-2xl dark:bg-slate-900 bg-slate-100 justify-between flex-col h-full w-full md:w-[350px] lg:w-[460px]"
+      className="flex rounded-2xl dark:bg-neutral-950 bg-slate-100 justify-between flex-col h-full w-full md:w-[350px] lg:w-[460px]"
     >
       <div className="flex flex-col justify-between h-full p-4 min-h-[500px]">
-        <header>
+        <div>
           <ProjectImage
             images={images.map((image, i) => {
               return {
@@ -54,11 +49,13 @@ export default function ProjectCard({
             })}
           />
 
-          <h1 className="font-bold uppercase mt-5">{title}</h1>
-          <div className="max-w-prose my-3">
+          <h1 className="font-bold uppercase mt-5 dark:text-neutral-400">
+            {title}
+          </h1>
+          <div className="max-w-prose my-3 dark:text-neutral-200">
             <PortableText value={description} />
           </div>
-        </header>
+        </div>
 
         <div className="flex flex-wrap gap-y-10 justify-between mt-5 items-center">
           <div className="flex gap-2">

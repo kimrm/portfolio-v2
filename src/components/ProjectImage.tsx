@@ -87,7 +87,7 @@ export default function ProjectImage({ images }: ProjectImageProps) {
         alt="Holidation project"
         width={760}
         height={430}
-        className="w-full h-52 object-cover cursor-pointer border-white border-2 rounded-xl dark:shadow-xl shadow-lg dark:shadow-slate-700 shadow-slate-400 "
+        className="w-full h-52 object-cover cursor-pointer rounded "
       />
     </div>
   );

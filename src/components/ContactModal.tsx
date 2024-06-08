@@ -26,6 +26,7 @@ export default function ContactModal({ onClose }: ContactModalProps) {
         className="fixed inset-0 bg-black bg-opacity-50 z-50"
       >
         <motion.div
+          role="dialog"
           initial={{ y: -40 }}
           animate={{ y: 0 }}
           className="bg-white dark:bg-slate-800 dark:text-neutral-50 text-neutral-950 p-4 rounded-lg w-11/12 md:w-1/2 lg:w-1/3 mx-auto my-20"
@@ -96,6 +97,7 @@ function SubmitButton() {
 
   return (
     <button
+      disabled={pending}
       type="submit"
       className="rounded-lg w-32 overflow-hidden flex items-center justify-center gap-1 px-4 py-2 bg-zinc-300 dark:bg-slate-500 dark:hover:bg-slate-600 hover:bg-zinc-400 transition-all duration-300 text-neutral-950 dark:text-neutral-50"
     >

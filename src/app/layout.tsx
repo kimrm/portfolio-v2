@@ -29,8 +29,7 @@ export default function RootLayout({
   const navItems = [
     { name: "Home", link: "/#home", icon: <HomeIcon /> },
     { name: "Projects", link: "/#projects", icon: <ProjectsIcon /> },
-    { name: "About", link: "/#about", icon: <AboutIcon /> },
-    { name: "Contact", link: "/#contact", icon: <ContactIcon /> }
+    { name: "About", link: "/#about", icon: <AboutIcon /> }
   ];
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>

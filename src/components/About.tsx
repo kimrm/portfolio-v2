@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="dark:bg-gradient-to-b dark:from-[#03051c] dark:to-black px-4 md:px-20 flex flex-col items-center py-40 "
+      className="dark:bg-gradient-to-b dark:from-[#03051c] dark:to-black px-4 md:px-20 flex flex-col items-center py-20 "
     >
       <MovingHeading>
         <q>Hello world</q>

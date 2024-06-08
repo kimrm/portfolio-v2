@@ -12,7 +12,7 @@ export default async function Projects() {
   return (
     <div
       id="projects"
-      className="flex mx-auto flex-col items-center justify-center px-4 py-20 max-w-[1800px] dark:bg-zinc-950 bg-zinc-300 rounded-xl"
+      className="flex mx-auto flex-col items-center justify-center px-4 py-20 max-w-[1800px] rounded-xl"
     >
       <h2 className="font-bold sm:text-xl uppercase tracking-wide dark:text-neutral-300 text-neutral-900  mb-5">
         Selection of recent Projects

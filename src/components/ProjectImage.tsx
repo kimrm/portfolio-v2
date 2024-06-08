@@ -41,6 +41,8 @@ export default function ProjectImage({ images }: ProjectImageProps) {
       {images.length > 1 && (
         <>
           <button
+            aria-label="Previous image"
+            title="Previous image"
             className="absolute top-0 w-1/2 flex items-center justify-end h-full right-0 p-2 text-white"
             onClick={handleNextImage}
           >
@@ -60,6 +62,8 @@ export default function ProjectImage({ images }: ProjectImageProps) {
             </svg>
           </button>
           <button
+            aria-label="Next image"
+            title="Next image"
             className="absolute top-0 w-1/2 h-full left-0 p-2 text-white flex items-center justify-start"
             onClick={handlePrevImage}
           >

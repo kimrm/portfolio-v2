@@ -9,7 +9,7 @@ export default function About() {
       id="about"
       className="dark:bg-gradient-to-b dark:from-[#03051c] dark:to-black px-4 md:px-20 flex flex-col items-center py-20 "
     >
-      <MovingHeading className="text-4xl italic md:text-5xl lg:text-8xl mb-2 font-display text-sky-800 dark:text-sky-200">
+      <MovingHeading className="text-4xl italic md:text-5xl lg:text-8xl mb-2 font-display text-slate-700 dark:text-slate-400">
         <q>Hello world</q>
       </MovingHeading>
       <h3 className="text-xs uppercase tracking-wide text-slate-700 dark:text-slate-400 mb-10">

@@ -36,7 +36,7 @@ export default function ProjectCard({
   return (
     <div
       key={_id}
-      className="flex rounded-2xl border-[1px] border-neutral-300 dark:border-neutral-800 dark:bg-neutral-900 bg-slate-100 justify-between flex-col h-full w-full md:w-[350px] lg:w-[460px]"
+      className="flex rounded-2xl dark:bg-[#070b26] bg-neutral-100  justify-between flex-col h-full w-full md:w-[350px] lg:w-[460px]"
     >
       <div className="flex flex-col justify-between h-full p-4 min-h-[500px]">
         <div>

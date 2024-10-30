@@ -5,7 +5,7 @@ export default function SkillsBadges() {
   return (
     <div className="flex flex-col h-full">
       <h2 className="font-bold uppercase tracking-wide dark:text-gray-300 mb-5">
-        Tools I have used in school and at work
+        Tools I&apos;m familiar with
       </h2>
       <div className="flex-grow flex items-center justify-center">
         <div className="flex flex-wrap gap-x-4 gap-y-6 p-4 items-center justify-center">

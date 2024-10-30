@@ -2,7 +2,7 @@ import { SanityDocument } from "next-sanity";
 import { sanityFetch } from "@/sanity/client";
 import ProjectCard from "./ProjectCard";
 
-const PROJECTS_QUERY = `*[_type == "project"]{_id, title, description, tags, website, github, images, _createdAt, _updatedAt}|order(_createdAt asc)`;
+const PROJECTS_QUERY = `*[_type == "project"]{_id, sortOrder, title, description, tags, website, github, images, _createdAt, _updatedAt}|order(sortOrder asc)`;
 
 export default async function Projects() {
   const projects = await sanityFetch<SanityDocument[]>({
